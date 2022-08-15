@@ -1,0 +1,5 @@
+string=input("Please write any string that contain number 1 \n")
+# for example: string = "Mawj1Sameer"
+new_string = string.replace("1", "") 
+print(new_string)
+# result=MawjSameer
