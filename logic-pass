@@ -1,5 +1,33 @@
+#Q1/Write a method that will remove any given character from a String?
 string=input("Please write any string that contain number 1 \n")
 # for example: string = "Mawj1Sameer"
 new_string = string.replace("1", "") 
 print(new_string)
 # result=MawjSameer
+
+#Q2/Write a program to find all prime numbers up to a given range
+of numbers?
+
+print("Python program to find prime numbers within a range")
+
+first = int(input("Please enter the first number:\n"))
+last = int(input("Please enter the lasst number:\n"))
+print(f"The prime numbers between {first} and {last} are:")
+
+for num in range(first, last):
+  if num > 1:
+    for i in range(2, num):
+      if (num % i) == 0:
+        break
+    else:
+      print(num, end=" ")
+      
+#Q3/write a function that count how many the given character repeated
+in a given string?
+
+chars = "abcdefghijklmnopqrstuvwxyz"
+check_string = input("please enter the string that you need to check\n").lower()
+for char in chars:
+  count = check_string.count(char)
+  if count > 1:
+    print (char, count)
